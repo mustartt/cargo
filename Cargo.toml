@@ -278,3 +278,7 @@ all-static = ['vendored-openssl', 'curl/static-curl', 'curl/force-system-lib-on-
 
 [lints]
 workspace = true
+
+[patch.crates-io]
+memmap2 = { git = 'https://github.com/mustartt/memmap2-rs.git', branch = 'patch-1.89' }
+rustix = { git = 'https://github.com/mustartt/rustix.git', branch = 'patch-1.89' }
